@@ -16,11 +16,14 @@ veterinario.Mascotas = new List<Mascotas>();
 veterinario.Mascotas = persona.Mascotas;
 veterinario.Especialidad = "No se, no soy veterinario";
 
-Console.WriteLine("Mascotas atendidas por el veterinario ", veterinario.Nombre, " con especialidad ", veterinario.Especialidad);
+Console.WriteLine("Mascotas atendidas por el veterinario " + veterinario.Nombre + " con especialidad " + veterinario.Especialidad);
+int m = 0;
 foreach (var i in veterinario.Mascotas)
 {
-    Console.WriteLine("Nombre: ", i.Nombre);
-    Console.WriteLine("Tipo: ", i.Tipo);
+    m++;
+    Console.WriteLine("Animal #" + m);
+    Console.WriteLine("Nombre: " + i.Nombre);
+    Console.WriteLine("Tipo: " + i.Tipo);
 }
 
 public class Personas
