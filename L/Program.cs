@@ -15,6 +15,7 @@ veterinario.Edad = 25;
 veterinario.Mascotas = new List<Mascotas>();
 veterinario.Mascotas = persona.Mascotas;
 veterinario.Especialidad = "No se, no soy veterinario";
+
 Console.WriteLine("Mascotas atendidas por el veterinario ", veterinario.Nombre, " con especialidad ", veterinario.Especialidad);
 foreach (var i in veterinario.Mascotas)
 {
